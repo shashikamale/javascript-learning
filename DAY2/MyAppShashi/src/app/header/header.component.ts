@@ -7,8 +7,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
   logo: string;
+  sitename: string;
   constructor() {
-    this.logo = '../../assets/googlelogo.png';
+    this.logo = '../../assets/images.png';
+    this.sitename = 'Maca Donaldsa';
     console.log('Header Component initialised- Constructor');
    }
 

@@ -6,8 +6,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./footer.component.css']
 })
 export class FooterComponent implements OnInit {
+  partners: string[];
 
-  constructor() { }
+  constructor() {
+    this.partners = ['Ola', 'Uber'];
+   }
 
   ngOnInit() {
   }
