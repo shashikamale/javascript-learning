@@ -1,0 +1,34 @@
+0.
+run the travel.json  with 
+PS C:\Shashi\AngularJs\DAY2\AMorningAngular> json-server .\travel.json
+
+1. make Interface weekendtrip.ts  
+  //
+  ng g i weekendtrip, 
+  then fill in the json 
+
+2. make service showtrips showtripsservice.ts
+ // ng g s showtrips
+
+3. app.module.ts
+import {HttpClient, HttpClientModule} from '@angular/common/http';
+add
+ imports: [ HttpClientModule]
+ providers: [HttpClient]
+
+4. showtrips.service.ts
+ import { HttpClient } from '../../node_modules/@angular/common/http';
+
+
+then write code for 
+findWeekEnd
+findOneDay
+
+
+5. holidays.component.html read data 
+
+6. refresh in browse 
+
+
+
+
