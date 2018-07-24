@@ -1,0 +1,991 @@
+PS C:\Shashi\AngularJs> dir
+
+
+    Directory: C:\Shashi\AngularJs
+
+
+Mode                LastWriteTime     Length Name
+----                -------------     ------ ----
+d----         7/23/2018   3:57 PM            .vscode
+d----         7/23/2018   5:22 PM            DAY1
+d----         7/24/2018   9:37 AM            DAY2
+-a---         7/23/2018  12:57 PM          0 README.md
+
+
+PS C:\Shashi\AngularJs> node
+> dir
+ReferenceError: dir is not defined
+> npm
+ReferenceError: npm is not defined
+>
+>
+> npm install
+npm should be run outside of the node repl, in your normal shell.
+(Press Control-D to exit.)
+>
+(To exit, press ^C again or type .exit)
+>
+PS C:\Shashi\AngularJs> npm install
+npm WARN saveError ENOENT: no such file or directory, open 'C:\Shashi\AngularJs\package.json'
+npm notice created a lockfile as package-lock.json. You should commit this file.
+npm WARN enoent ENOENT: no such file or directory, open 'C:\Shashi\AngularJs\package.json'
+npm WARN AngularJs No description
+npm WARN AngularJs No repository field.
+npm WARN AngularJs No README data
+npm WARN AngularJs No license field.
+
+up to date in 0.068s
+PS C:\Shashi\AngularJs> cd ..
+PS C:\Shashi> npm install -g json-servier
+npm WARN notice Due to a recent security incident, all user tokens have been invalidated. Please see https://status.npmjs.org/incidents/dn7c1fgrr7ng for more details. To generate a new token, visit https://www.npmjs.com/settings/~/tokens or run "npm login".
+npm ERR! code E404
+npm ERR! 404 Not Found: json-servier@latest
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     C:\Users\verizon\AppData\Roaming\npm-cache\_logs\2018-07-24T05_00_59_811Z-debug.log
+PS C:\Shashi> npm install -g json-server
+C:\Users\verizon\AppData\Roaming\npm\json-server -> C:\Users\verizon\AppData\Roaming\npm\node_modules\json-server\bin\index.js
++ json-server@0.14.0
+added 230 packages in 25.933s
+PS C:\Shashi> npm status
+
+Usage: npm <command>
+
+where <command> is one of:
+    access, adduser, bin, bugs, c, cache, completion, config,
+    ddp, dedupe, deprecate, dist-tag, docs, doctor, edit,
+    explore, get, help, help-search, i, init, install,
+    install-test, it, link, list, ln, login, logout, ls,
+    outdated, owner, pack, ping, prefix, profile, prune,
+    publish, rb, rebuild, repo, restart, root, run, run-script,
+    s, se, search, set, shrinkwrap, star, stars, start, stop, t,
+    team, test, token, tst, un, uninstall, unpublish, unstar,
+    up, update, v, version, view, whoami
+
+npm <command> -h     quick help on <command>
+npm -l           display full usage info
+npm help <term>  search for help on <term>
+npm help npm     involved overview
+
+Specify configs in the ini-formatted file:
+    C:\Users\verizon\.npmrc
+or on the command line via: npm <command> --key value
+Config info can be viewed via: npm help config
+
+npm@5.6.0 C:\Program Files\nodejs\node_modules\npm
+
+Did you mean one of these?
+    stars
+    star
+    start
+PS C:\Shashi> npm list
+C:\Shashi
+`-- (empty)
+
+PS C:\Shashi> pwd
+
+Path
+----
+C:\Shashi
+
+
+PS C:\Shashi> ls -l
+Get-ChildItem : Missing an argument for parameter 'LiteralPath'. Specify a parameter of type 'System.String[]' and try again.
+At line:1 char:6
++ ls -l <<<<
+    + CategoryInfo          : InvalidArgument: (:) [Get-ChildItem], ParameterBindingException
+    + FullyQualifiedErrorId : MissingArgument,Microsoft.PowerShell.Commands.GetChildItemCommand
+
+PS C:\Shashi> fir
+The term 'fir' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the spelling of the n
+ame, or if a path was included, verify that the path is correct and try again.
+At line:1 char:4
++ fir <<<<
+    + CategoryInfo          : ObjectNotFound: (fir:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS C:\Shashi> dir
+
+
+    Directory: C:\Shashi
+
+
+Mode                LastWriteTime     Length Name
+----                -------------     ------ ----
+d----         7/24/2018  10:30 AM            AngularJs
+-a---         7/23/2018   3:52 PM         68 SHashi'sWorkspace.code-workspace
+
+
+PS C:\Shashi> cd .\AngularJs
+PS C:\Shashi\AngularJs> dir
+
+
+    Directory: C:\Shashi\AngularJs
+
+
+Mode                LastWriteTime     Length Name
+----                -------------     ------ ----
+d----         7/23/2018   3:57 PM            .vscode
+d----         7/23/2018   5:22 PM            DAY1
+d----         7/24/2018   9:37 AM            DAY2
+-a---         7/24/2018  10:30 AM         27 package-lock.json
+-a---         7/23/2018  12:57 PM          0 README.md
+
+
+PS C:\Shashi\AngularJs> cat .\package-lock.json
+{
+  "lockfileVersion": 1
+}
+PS C:\Shashi\AngularJs> git remote add origin https://github.com/shashikamale/javascriptlearning.git
+fatal: remote origin already exists.
+PS C:\Shashi\AngularJs> git push origin master
+Everything up-to-date
+PS C:\Shashi\AngularJs> git push origin master
+Everything up-to-date
+PS C:\Shashi\AngularJs> git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        new file:   .vscode/launch.json
+        new file:   DAY1/Apps/Application.js
+        new file:   DAY1/Apps/Books.js
+        new file:   DAY1/Apps/IFFI.js
+        new file:   DAY1/Apps/InterestCalculation.js
+        new file:   DAY1/Apps/objectCreation.js
+        new file:   DAY1/Quickstarts/css/style.css
+        new file:   DAY1/Quickstarts/quickstart.html
+        new file:   DAY1/Quickstarts/quickstartv2.html
+        new file:   DAY1/scripts/quickstart.js
+        new file:   DAY1/scripts/quickstartNoon.js
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   README.md
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        package-lock.json
+
+PS C:\Shashi\AngularJs> git commit
+[master 440fce3] COmmiting Angular JS Learnings to Git hub
+ 11 files changed, 273 insertions(+)
+ create mode 100644 .vscode/launch.json
+ create mode 100644 DAY1/Apps/Application.js
+ create mode 100644 DAY1/Apps/Books.js
+ create mode 100644 DAY1/Apps/IFFI.js
+ create mode 100644 DAY1/Apps/InterestCalculation.js
+ create mode 100644 DAY1/Apps/objectCreation.js
+ create mode 100644 DAY1/Quickstarts/css/style.css
+ create mode 100644 DAY1/Quickstarts/quickstart.html
+ create mode 100644 DAY1/Quickstarts/quickstartv2.html
+ create mode 100644 DAY1/scripts/quickstart.js
+ create mode 100644 DAY1/scripts/quickstartNoon.js
+PS C:\Shashi\AngularJs> git commit
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+        modified:   README.md
+
+Untracked files:
+        package-lock.json
+
+no changes added to commit
+PS C:\Shashi\AngularJs> git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   README.md
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        package-lock.json
+
+no changes added to commit (use "git add" and/or "git commit -a")
+PS C:\Shashi\AngularJs> git push origin master
+Counting objects: 19, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (16/16), done.
+Writing objects: 100% (19/19), 3.58 KiB | 1.79 MiB/s, done.
+Total 19 (delta 2), reused 0 (delta 0)
+remote: Resolving deltas: 100% (2/2), done.
+To https://github.com/shashikamale/javascriptlearning.git
+   77c55dd..440fce3  master -> master
+PS C:\Shashi\AngularJs> git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    Directory: C:\Shashi\AngularJs\DAY1
+
+
+Mode                LastWriteTime     Length Name
+----                -------------     ------ ----
+d----         7/23/2018   5:23 PM            Apps
+d----         7/23/2018   5:22 PM            Quickstarts
+d----         7/23/2018   5:22 PM            scripts
+
+
+PS C:\Shashi\AngularJs\DAY1> cd .\Apps
+PS C:\Shashi\AngularJs\DAY1\Apps> dir
+
+
+    Directory: C:\Shashi\AngularJs\DAY1\Apps
+
+
+Mode                LastWriteTime     Length Name
+----                -------------     ------ ----
+-a---         7/23/2018   5:49 PM        855 Application.js
+-a---         7/23/2018   5:49 PM        626 Books.js
+-a---         7/23/2018   5:21 PM        533 IFFI.js
+-a---         7/23/2018   5:21 PM        149 InterestCalculation.js
+-a---         7/23/2018   5:21 PM       1184 objectCreation.js
+
+
+PS C:\Shashi\AngularJs\DAY1\Apps> git add *
+PS C:\Shashi\AngularJs\DAY1\Apps> git push -u origin master
+Everything up-to-date
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+PS C:\Shashi\AngularJs\DAY1\Apps> git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        new file:   Application.js
+        new file:   Books.js
+        new file:   IFFI.js
+        new file:   InterestCalculation.js
+        new file:   objectCreation.js
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        ../../.vscode/
+        ../Quickstarts/
+        ../scripts/
+
+PS C:\Shashi\AngularJs\DAY1\Apps> git add ..\scripts/
+PS C:\Shashi\AngularJs\DAY1\Apps> git add ..\Quickstarts/
+PS C:\Shashi\AngularJs\DAY1\Apps> git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        new file:   Application.js
+        new file:   Books.js
+        new file:   IFFI.js
+        new file:   InterestCalculation.js
+        new file:   objectCreation.js
+
+        new file:   ../Quickstarts/quickstart.html
+        new file:   ../Quickstarts/quickstartv2.html
+        new file:   ../scripts/quickstart.js
+        new file:   ../scripts/quickstartNoon.js
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        ../../.vscode/
+
+PS C:\Shashi\AngularJs\DAY1\Apps> cd ..
+PS C:\Shashi\AngularJs\DAY1> cd ..
+PS C:\Shashi\AngularJs> git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        new file:   DAY1/Apps/Application.js
+        new file:   DAY1/Apps/Books.js
+        new file:   DAY1/Apps/IFFI.js
+        new file:   DAY1/Apps/InterestCalculation.js
+        new file:   DAY1/Apps/objectCreation.js
+        new file:   DAY1/Quickstarts/css/style.css
+        new file:   DAY1/Quickstarts/quickstart.html
+        new file:   DAY1/Quickstarts/quickstartv2.html
+        new file:   DAY1/scripts/quickstart.js
+        new file:   DAY1/scripts/quickstartNoon.js
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        .vscode/
+
+PS C:\Shashi\AngularJs> git push
+Everything up-to-date
+PS C:\Shashi\AngularJs> git add .vscode/
+PS C:\Shashi\AngularJs> git push
+Everything up-to-date
+PS C:\Shashi\AngularJs> pwd
+
+Path
+----
+C:\Shashi\AngularJs
+
+
+PS C:\Shashi\AngularJs> mkdir DAY2
+
+
+    Directory: C:\Shashi\AngularJs
+
+
+Mode                LastWriteTime     Length Name
+----                -------------     ------ ----
+d----         7/24/2018   9:37 AM            DAY2
+
+
+PS C:\Shashi\AngularJs> dir
+
+
+    Directory: C:\Shashi\AngularJs
+
+
+Mode                LastWriteTime     Length Name
+----                -------------     ------ ----
+d----         7/23/2018   3:57 PM            .vscode
+d----         7/23/2018   5:22 PM            DAY1
+d----         7/24/2018   9:37 AM            DAY2
+-a---         7/23/2018  12:57 PM          0 README.md
+
+
+PS C:\Shashi\AngularJs> git push
+Everything up-to-date
+PS C:\Shashi\AngularJs> git add .\DAY2
+PS C:\Shashi\AngularJs> git push
+Everything up-to-date
+PS C:\Shashi\AngularJs> git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        new file:   .vscode/launch.json
+        new file:   DAY1/Apps/Application.js
+        new file:   DAY1/Apps/Books.js
+        new file:   DAY1/Apps/IFFI.js
+        new file:   DAY1/Apps/InterestCalculation.js
+        new file:   DAY1/Apps/objectCreation.js
+        new file:   DAY1/Quickstarts/css/style.css
+        new file:   DAY1/Quickstarts/quickstart.html
+        new file:   DAY1/Quickstarts/quickstartv2.html
+        new file:   DAY1/scripts/quickstart.js
+        new file:   DAY1/scripts/quickstartNoon.js
+
+PS C:\Shashi\AngularJs> git push origin master
+Everything up-to-date
+
+usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | --no-pager] [--no-replace-objects] [--bare]
+
+
+S
+*
+Y
+*
+N
+*
+C
+*
+0
+0
+0
+0
+0
+0
+0
+2
+   log        Show commit logs
+   show       Show various types of objects
+   status     Show the working tree status
+
+grow, mark and tweak your common history
+   branch     List, create, or delete branches
+   checkout   Switch branches or restore working tree files
+   commit     Record changes to the repository
+   diff       Show changes between commits, commit and working tree, etc
+   merge      Join two or more development histories together
+   rebase     Reapply commits on top of another base tip
+   tag        Create, list, delete or verify a tag object signed with GPG
+
+collaborate (see also: git help workflows)
+
+   pull       Fetch from and integrate with another repository or a local branch
+   push       Update remote refs along with associated objects
+
+'git help -a' and 'git help -g' list available subcommands and some
+concept guides. See 'git help <command>' or 'git help <concept>'
+to read about a specific subcommand or concept.
+PS C:\Shashi\AngularJs>
+PS C:\Shashi\AngularJs>
+PS C:\Shashi\AngularJs>
+PS C:\Shashi\AngularJs>
+PS C:\Shashi\AngularJs>
+PS C:\Shashi\AngularJs>
+PS C:\Shashi\AngularJs>
+PS C:\Shashi\AngularJs> fir
+The term 'fir' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the spelling of the n
+ame, or if a path was included, verify that the path is correct and try again.
+At line:1 char:4
++ fir <<<<
+    + CategoryInfo          : ObjectNotFound: (fir:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS C:\Shashi\AngularJs> dir
+
+
+    Directory: C:\Shashi\AngularJs
+
+
+Mode                LastWriteTime     Length Name
+----                -------------     ------ ----
+d----         7/23/2018   3:57 PM            .vscode
+d----         7/23/2018   5:22 PM            DAY1
+d----         7/24/2018   9:37 AM            DAY2
+-a---         7/23/2018  12:57 PM          0 README.md
+
+
+PS C:\Shashi\AngularJs> node
+> dir
+ReferenceError: dir is not defined
+> npm
+ReferenceError: npm is not defined
+>
+>
+> npm install
+npm should be run outside of the node repl, in your normal shell.
+(Press Control-D to exit.)
+>
+(To exit, press ^C again or type .exit)
+>
+PS C:\Shashi\AngularJs> npm install
+npm WARN saveError ENOENT: no such file or directory, open 'C:\Shashi\AngularJs\package.json'
+npm notice created a lockfile as package-lock.json. You should commit this file.
+npm WARN enoent ENOENT: no such file or directory, open 'C:\Shashi\AngularJs\package.json'
+npm WARN AngularJs No description
+npm WARN AngularJs No repository field.
+npm WARN AngularJs No README data
+npm WARN AngularJs No license field.
+
+up to date in 0.068s
+PS C:\Shashi\AngularJs> cd ..
+PS C:\Shashi> npm install -g json-servier
+npm WARN notice Due to a recent security incident, all user tokens have been invalidated. Please see https://status.npmjs.org/incidents/dn7c1fgrr7ng for more details. To generate a new token, visit https://www.npmjs.com/settings/~/tokens or run "npm login".
+npm ERR! code E404
+npm ERR! 404 Not Found: json-servier@latest
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     C:\Users\verizon\AppData\Roaming\npm-cache\_logs\2018-07-24T05_00_59_811Z-debug.log
+PS C:\Shashi> npm install -g json-server
+C:\Users\verizon\AppData\Roaming\npm\json-server -> C:\Users\verizon\AppData\Roaming\npm\node_modules\json-server\bin\index.js
++ json-server@0.14.0
+added 230 packages in 25.933s
+PS C:\Shashi> npm status
+
+Usage: npm <command>
+
+where <command> is one of:
+    access, adduser, bin, bugs, c, cache, completion, config,
+    ddp, dedupe, deprecate, dist-tag, docs, doctor, edit,
+    explore, get, help, help-search, i, init, install,
+    install-test, it, link, list, ln, login, logout, ls,
+    outdated, owner, pack, ping, prefix, profile, prune,
+    publish, rb, rebuild, repo, restart, root, run, run-script,
+    s, se, search, set, shrinkwrap, star, stars, start, stop, t,
+    team, test, token, tst, un, uninstall, unpublish, unstar,
+    up, update, v, version, view, whoami
+
+npm <command> -h     quick help on <command>
+npm -l           display full usage info
+npm help <term>  search for help on <term>
+npm help npm     involved overview
+
+Specify configs in the ini-formatted file:
+    C:\Users\verizon\.npmrc
+or on the command line via: npm <command> --key value
+Config info can be viewed via: npm help config
+
+npm@5.6.0 C:\Program Files\nodejs\node_modules\npm
+
+Did you mean one of these?
+    stars
+    star
+    start
+PS C:\Shashi> npm list
+C:\Shashi
+`-- (empty)
+
+PS C:\Shashi> pwd
+
+Path
+----
+C:\Shashi
+
+
+PS C:\Shashi> ls -l
+Get-ChildItem : Missing an argument for parameter 'LiteralPath'. Specify a parameter of type 'System.String[]' and try again.
+At line:1 char:6
++ ls -l <<<<
+    + CategoryInfo          : InvalidArgument: (:) [Get-ChildItem], ParameterBindingException
+    + FullyQualifiedErrorId : MissingArgument,Microsoft.PowerShell.Commands.GetChildItemCommand
+
+PS C:\Shashi> fir
+The term 'fir' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the spelling of the n
+ame, or if a path was included, verify that the path is correct and try again.
+At line:1 char:4
++ fir <<<<
+    + CategoryInfo          : ObjectNotFound: (fir:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS C:\Shashi> dir
+
+
+    Directory: C:\Shashi
+
+
+Mode                LastWriteTime     Length Name
+----                -------------     ------ ----
+d----         7/24/2018  10:30 AM            AngularJs
+-a---         7/23/2018   3:52 PM         68 SHashi'sWorkspace.code-workspace
+
+
+PS C:\Shashi> cd .\AngularJs
+PS C:\Shashi\AngularJs> dir
+
+
+    Directory: C:\Shashi\AngularJs
+
+
+Mode                LastWriteTime     Length Name
+----                -------------     ------ ----
+d----         7/23/2018   3:57 PM            .vscode
+d----         7/23/2018   5:22 PM            DAY1
+d----         7/24/2018   9:37 AM            DAY2
+-a---         7/24/2018  10:30 AM         27 package-lock.json
+-a---         7/23/2018  12:57 PM          0 README.md
+
+
+PS C:\Shashi\AngularJs> cat .\package-lock.json
+{
+  "lockfileVersion": 1
+}
+PS C:\Shashi\AngularJs> git remote add origin https://github.com/shashikamale/javascriptlearning.git
+fatal: remote origin already exists.
+PS C:\Shashi\AngularJs> git push origin master
+Everything up-to-date
+PS C:\Shashi\AngularJs> git push origin master
+Everything up-to-date
+PS C:\Shashi\AngularJs> git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        new file:   .vscode/launch.json
+        new file:   DAY1/Apps/Application.js
+        new file:   DAY1/Apps/Books.js
+        new file:   DAY1/Apps/IFFI.js
+        new file:   DAY1/Apps/InterestCalculation.js
+        new file:   DAY1/Apps/objectCreation.js
+        new file:   DAY1/Quickstarts/css/style.css
+        new file:   DAY1/Quickstarts/quickstart.html
+        new file:   DAY1/Quickstarts/quickstartv2.html
+        new file:   DAY1/scripts/quickstart.js
+        new file:   DAY1/scripts/quickstartNoon.js
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   README.md
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        package-lock.json
+
+PS C:\Shashi\AngularJs> git commit
+[master 440fce3] COmmiting Angular JS Learnings to Git hub
+ 11 files changed, 273 insertions(+)
+ create mode 100644 .vscode/launch.json
+ create mode 100644 DAY1/Apps/Application.js
+ create mode 100644 DAY1/Apps/Books.js
+ create mode 100644 DAY1/Apps/IFFI.js
+ create mode 100644 DAY1/Apps/InterestCalculation.js
+ create mode 100644 DAY1/Apps/objectCreation.js
+ create mode 100644 DAY1/Quickstarts/css/style.css
+ create mode 100644 DAY1/Quickstarts/quickstart.html
+ create mode 100644 DAY1/Quickstarts/quickstartv2.html
+ create mode 100644 DAY1/scripts/quickstart.js
+ create mode 100644 DAY1/scripts/quickstartNoon.js
+PS C:\Shashi\AngularJs> git commit
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+        modified:   README.md
+
+Untracked files:
+        package-lock.json
+
+no changes added to commit
+PS C:\Shashi\AngularJs> git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   README.md
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        package-lock.json
+
+no changes added to commit (use "git add" and/or "git commit -a")
+PS C:\Shashi\AngularJs> git push origin master
+Counting objects: 19, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (16/16), done.
+Writing objects: 100% (19/19), 3.58 KiB | 1.79 MiB/s, done.
+Total 19 (delta 2), reused 0 (delta 0)
+remote: Resolving deltas: 100% (2/2), done.
+To https://github.com/shashikamale/javascriptlearning.git
+   77c55dd..440fce3  master -> master
+PS C:\Shashi\AngularJs> git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   README.md
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        package-lock.json
+
+no changes added to commit (use "git add" and/or "git commit -a")
+PS C:\Shashi\AngularJs> git add .\README.md
+PS C:\Shashi\AngularJs> git push origin master
+Everything up-to-date
+PS C:\Shashi\AngularJs> git commit
+[master eec6a49] git push origin masteng readmier
+ 1 file changed, 1 insertion(+)
+PS C:\Shashi\AngularJs> git push origin master
+Counting objects: 3, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 304 bytes | 304.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/shashikamale/javascriptlearning.git
+   440fce3..eec6a49  master -> master
+PS C:\Shashi\AngularJs>
+PS C:\Shashi\AngularJs>
+PS C:\Shashi\AngularJs> pwd
+
+Path
+----
+C:\Shashi\AngularJs
+
+
+PS C:\Shashi\AngularJs> cd
+PS C:\Shashi\AngularJs> cd  .\DAY2
+PS C:\Shashi\AngularJs\DAY2> dir
+
+
+    Directory: C:\Shashi\AngularJs\DAY2
+
+
+Mode                LastWriteTime     Length Name
+----                -------------     ------ ----
+-a---         7/24/2018  10:42 AM        508 travel.json
+
+
+PS C:\Shashi\AngularJs\DAY2>
+PS C:\Shashi\AngularJs\DAY2>
+PS C:\Shashi\AngularJs\DAY2> json-server
+index.js [options] <source>
+
+Options:
+  --config, -c               Path to config file   [default: "json-server.json"]
+  --port, -p                 Set port                            [default: 3000]
+  --host, -H                 Set host                     [default: "localhost"]
+  --watch, -w                Watch file(s)                             [boolean]
+  --routes, -r               Path to routes file
+  --middlewares, -m          Paths to middleware files                   [array]
+  --static, -s               Set static files directory
+  --read-only, --ro          Allow only GET requests                   [boolean]
+  --no-cors, --nc            Disable Cross-Origin Resource Sharing     [boolean]
+  --no-gzip, --ng            Disable GZIP Content-Encoding             [boolean]
+  --snapshots, -S            Set snapshots directory              [default: "."]
+  --delay, -d                Add delay to responses (ms)
+  --id, -i                   Set database id property (e.g. _id) [default: "id"]
+  --foreignKeySuffix, --fks  Set foreign key suffix (e.g. _id as in post_id)
+                                                                 [default: "Id"]
+  --quiet, -q                Suppress log messages from output         [boolean]
+  --help, -h                 Show help                                 [boolean]
+  --version, -v              Show version number                       [boolean]
+
+Examples:
+  index.js db.json
+  index.js file.js
+  index.js http://example.com/db.json
+
+https://github.com/typicode/json-server
+
+Missing <source> argument
+PS C:\Shashi\AngularJs\DAY2> json-server .\travel.json
+
+  \{^_^}/ hi!
+
+  Loading .\travel.json
+  Done
+
+  Resources
+  http://localhost:3000/weekendTrips
+  http://localhost:3000/onedayTrips
+
+  Home
+  http://localhost:3000
+
+  Type s + enter at any time to create a snapshot of the database
+GET /db 200 8.153 ms - 684
+GET /__rules 404 12.101 ms - 2
+GET /weekendTrips 200 17.311 ms - 291
+GET /onedayTrips 200 18.464 ms - 276
+
+
+
+
+^A
+^CTerminate batch job (Y/N)?
+Terminate batch job (Y/N)? y
+PS C:\Shashi\AngularJs\DAY2> json-server .\travel.json  --watch
+
+  \{^_^}/ hi!
+
+  Loading .\travel.json
+  Done
+
+  Resources
+  http://localhost:3000/weekendTrips
+  http://localhost:3000/onedayTrips
+
+  Home
+  http://localhost:3000
+
+  Type s + enter at any time to create a snapshot of the database
+  Watching...
+
+
+GET /db 304 7.807 ms - -
+GET /__rules 404 15.106 ms - 2
+GET /weekendTrips 304 25.066 ms - -
+GET /weekendTrips 304 18.414 ms - -
+GET /weekendTrips 304 6.097 ms - -
+GET /weekendTrips 304 4.930 ms - -
+GET /weekendTrips?src=Hyderabad 200 6.899 ms - 193
+
+
+^CTerminate batch job (Y/N)?
+Terminate batch job (Y/N)?
+Terminate batch job (Y/N)?
+Terminate batch job (Y/N)? y
+PS C:\Shashi\AngularJs\DAY2>
+PS C:\Shashi\AngularJs\DAY2>
+PS C:\Shashi\AngularJs\DAY2>
+PS C:\Shashi\AngularJs\DAY2>
+PS C:\Shashi\AngularJs\DAY2>
+PS C:\Shashi\AngularJs\DAY2> npm install type-script
+npm WARN notice Due to a recent security incident, all user tokens have been invalidated. Please see https://status.npmjs.org/incidents/dn7c1fgrr7ng for more details. To generate a new token, visit https://www.npmjs.com/settings/~/tokens or run "npm login".
+npm ERR! code E404
+npm ERR! 404 Not Found: type-script@latest
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     C:\Users\verizon\AppData\Roaming\npm-cache\_logs\2018-07-24T05_27_01_016Z-debug.log
+PS C:\Shashi\AngularJs\DAY2> npm install type-script
+npm WARN notice Due to a recent security incident, all user tokens have been invalidated. Please see https://status.npmjs.org/incidents/dn7c1fgrr7ng for more details. To generate a new token, visit https://www.npmjs.com/settings/~/tokens or run "npm login".
+npm ERR! code E404
+npm ERR! 404 Not Found: type-script@latest
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     C:\Users\verizon\AppData\Roaming\npm-cache\_logs\2018-07-24T05_27_15_112Z-debug.log
+PS C:\Shashi\AngularJs\DAY2> npm install typescript
+npm WARN saveError ENOENT: no such file or directory, open 'C:\Shashi\AngularJs\DAY2\package.json'
+npm notice created a lockfile as package-lock.json. You should commit this file.
+npm WARN enoent ENOENT: no such file or directory, open 'C:\Shashi\AngularJs\DAY2\package.json'
+npm WARN DAY2 No description
+npm WARN DAY2 No repository field.
+npm WARN DAY2 No README data
+npm WARN DAY2 No license field.
+
++ typescript@2.9.2
+added 1 package in 1.371s
+PS C:\Shashi\AngularJs\DAY2> cd ..
+PS C:\Shashi\AngularJs> cd ..
+PS C:\Shashi> npm install typescript
+npm WARN saveError ENOENT: no such file or directory, open 'C:\Shashi\package.json'
+npm notice created a lockfile as package-lock.json. You should commit this file.
+npm WARN enoent ENOENT: no such file or directory, open 'C:\Shashi\package.json'
+npm WARN Shashi No description
+npm WARN Shashi No repository field.
+npm WARN Shashi No README data
+npm WARN Shashi No license field.
+
++ typescript@2.9.2
+added 1 package in 1.255s
+PS C:\Shashi> npm search typescript
+NAME                      | DESCRIPTION          | AUTHOR          | DATE       | VERSION  | KEYWORDS
+
+typescript                | TypeScript is a…     | =typescript     | 2018-06-13 | 2.9.2    | TypeScript Microsoft compiler languag
+ts-node                   | TypeScript…          | =blakeembrey    | 2018-06-22 | 7.0.0    | typescript node runtime environment t
+tslint                    | An extensible…       | =palantir       | 2018-07-16 | 5.11.0   | cli typescript linter
+@babel/preset-typescript  | Babel preset for…    | =danez…         | 2018-07-16 | 7.0.0-b… | babel-preset typescript
+protobufjs                | Protocol Buffers…    | =dcode          | 2018-07-19 | 6.8.8    | protobuf protocol-buffers serializati
+@babel/plugin-syntax-type | Allow parsing of…    | =danez…         | 2018-07-16 | 7.0.0-b… | babel-plugin typescript
+script                    |                      |                 |            |          |
+gulp-typescript           | A typescript…        | =ivogabe        | 2018-07-03 | 5.0.0-a… | typescript gulpplugin incremental com
+typescript-eslint-parser  | An Esprima-style…    | =eslint…        | 2018-06-27 | 16.0.1   | ast ecmascript javascript typescript
+
+graphql-tools             | Useful tools to…     | =abernix…       | 2018-07-06 | 3.0.5    | GraphQL Apollo JavaScript TypeScript
+
+ts-loader                 | TypeScript loader…   | =blakeembrey…   | 2018-06-27 | 4.4.2    | ts-loader typescript-loader webpack l
+vue-class-component       | ES201X/TypeScript…   | =ktsn…          | 2018-02-16 | 6.2.0    | vue class babel typescript
+ts-jest                   | A preprocessor with… | =kul            | 2018-07-17 | 23.0.1   | jest typescript sourcemap react testi
+typescript-formatter      | Formatter of…        | =vvakame        | 2018-06-01 | 7.2.2    | TypeScript
+csstype                   | Strict TypeScript…   | =faddee         | 2018-07-21 | 2.5.6    | css style typescript flow typings typ
+awesome-typescript-loader | Awesome TS loader…   | =panferov-s     | 2018-06-21 | 5.2.0    | webpack loader webpack-loader typescr
+typescript-fsa            | Type-safe action…    | =aikoven        | 2018-05-16 | 3.0.0-b… | redux flux typescript action action c
+@vue/eslint-config-typesc | eslint-config-types… | =akryum…        | 2018-07-16 | 3.0.0-r… | vue cli
+ript                      |                      |                 |            |          |
+tsickle                   | Transpile…           | =mprobst…       | 2018-06-29 | 0.32.0   | typescript closure
+tsutils                   | utilities for…       | =ajaff          | 2018-07-17 | 2.28.0   | typescript ts ast typeguard utils hel
+karma-typescript          | Simplifying running… | =erikbarke…     | 2018-07-15 | 3.0.13   | angularjs angular2 browserify commonj
+PS C:\Shashi>
+PS C:\Shashi>
+PS C:\Shashi>
+PS C:\Shashi>
+PS C:\Shashi> cd .\AngularJs\DAY2
+PS C:\Shashi\AngularJs\DAY2>
+PS C:\Shashi\AngularJs\DAY2>
+PS C:\Shashi\AngularJs\DAY2>
+PS C:\Shashi\AngularJs\DAY2>
+PS C:\Shashi\AngularJs\DAY2>
+PS C:\Shashi\AngularJs\DAY2>
+PS C:\Shashi\AngularJs\DAY2>
+PS C:\Shashi\AngularJs\DAY2>
+PS C:\Shashi\AngularJs\DAY2>
+PS C:\Shashi\AngularJs\DAY2> node .\MyHttpServer.js
+Server is running : use http://localhost:5000/
+C:\Shashi\AngularJs\DAY2\MyHttpServer.js:4
+    response.send('<h1>Node Http Servier</h1>');
+             ^
+
+TypeError: response.send is not a function
+    at Server.http.createServer (C:\Shashi\AngularJs\DAY2\MyHttpServer.js:4:14)
+    at Server.emit (events.js:180:13)
+    at parserOnIncoming (_http_server.js:642:12)
+    at HTTPParser.parserOnHeadersComplete (_http_common.js:117:17)
+PS C:\Shashi\AngularJs\DAY2> node .\MyHttpServer.js
+Server is running : use http://localhost:5000/
+PS C:\Shashi\AngularJs\DAY2> node .\MyHttpServer.js
+Server is running : use http://localhost:5000/
