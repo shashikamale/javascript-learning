@@ -9,6 +9,7 @@
   </tr>
 </table>
 {{weekendPickupPoints}}
+<hr>
 <table class="table table-striped">
   <tr *ngFor='let eachTrip of oneDayEndTripList'>
     <td>{{eachTrip.source}}</td>
@@ -18,7 +19,7 @@
   </tr>
 
 </table>
-
+<hr>
 
 <div class='form-group form-inline'>
   <label> dinner order - qty</label>
@@ -33,3 +34,23 @@
   <span [ngStyle]="{'margin-left' : '15px'} ">{{msg}}</span>
 
 </div>
+<hr>
+<div >
+  <app-india-tour></app-india-tour>
+  <app-asia-tour></app-asia-tour>
+</div>
+<div  >
+    <table class="table table-striped">
+  <tr *ngFor='let indiaTour of indiaTours'>
+    <td>{{indiaTour.tourName}}</td>
+    <td>{{indiaTour.description}}</td>
+    <td>{{indiaTour.price | currency: 'EUR':'symbol'}}</td>
+    <td>
+      <img [src]='indiaTour.image' width="100" alt="IndiaTour-image" appResize>
+    </td>
+  </tr>
+</table>
+  
+
+</div>
+<hr>

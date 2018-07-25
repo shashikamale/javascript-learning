@@ -10,7 +10,9 @@ import { ListComponent } from './list/list.component';
 import { ProcessOrderComponent } from './process-order/process-order.component';
 import { AsiaTourComponent } from './asia-tour/asia-tour.component';
 import { IndiaTourComponent } from './india-tour/india-tour.component';
-import { TourComponent } from './tour/tour.component';
+import { HighLightDirective } from './high-light.directive';
+import { ResizeDirective } from './resize.directive';
+
 
 @NgModule({
   declarations: [
@@ -22,7 +24,8 @@ import { TourComponent } from './tour/tour.component';
     ProcessOrderComponent,
     AsiaTourComponent,
     IndiaTourComponent,
-    TourComponent
+    HighLightDirective,
+    ResizeDirective
   ],
   imports: [
     BrowserModule,

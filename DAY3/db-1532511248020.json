@@ -1,0 +1,42 @@
+{
+  "weekendTrips": [
+    {
+      "id": 1,
+      "src": "Hyderabad",
+      "destination": "vijayawada",
+      "fare": 4000
+    },
+    {
+      "id": 2,
+      "src": "Hyderabad",
+      "destination": "srisailam",
+      "fare": 2000
+    },
+    {
+      "id": 3,
+      "src": "Secunderabad",
+      "destination": "bangalore",
+      "fare": 6000
+    }
+  ],
+  "onedayTrips": [
+    {
+      "id": 1,
+      "src": "Hyderabad",
+      "destination": [
+        "ramojiFilmCity",
+        "SalarjungMuseum"
+      ],
+      "fare": 2500
+    },
+    {
+      "id": 2,
+      "src": "Hyderabad",
+      "destination": [
+        "Lumbini garden",
+        "Birla Mandir"
+      ],
+      "fare": 100
+    }
+  ]
+}

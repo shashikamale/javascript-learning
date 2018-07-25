@@ -2,3 +2,8 @@ h1 {
     text-align: center;
     color: #ff00ee
 }
+.list-group{
+    
+    display:inline-block;
+  
+}
