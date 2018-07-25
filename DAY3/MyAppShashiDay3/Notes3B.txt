@@ -1,0 +1,40 @@
+C:\Shashi\AngularJs\DAY3\MyAppShashiDay3\src\app\app.module.ts
+
+    import {FormsModule, ReactiveFormsModule} from '@angular/forms';
+    imports: [
+        //add to the existing
+            FormsModule,
+        ReactiveFormsModule
+    ]
+
+C:\Shashi\AngularJs\DAY3\MyAppShashiDay3\src\app\holidays\holidays.component.ts
+    weekendPickupPoints: any;
+    qty = 1;
+
+    show(destination) {
+        console.log(destination);
+        if (destination.toUpperCase() === 'VIJAYAWDA') {
+        this.weekendPickupPoints = ['Miyapur', 'Lingampally', 'Hitech'];
+        } else {
+        this.weekendPickupPoints = ['MGBS', 'Gachibowli', 'Hitech'];
+        }
+    }
+
+    display(destination) {
+        console.log(destination);
+        this.weekendPickupPoints = ['Miyapur', 'Lingampally', 'Hitech'];
+    }
+
+C:\Shashi\AngularJs\DAY3\MyAppShashiDay3\src\app\holidays\holidays.component.html
+    <td button (click)='show(eachTrip.destination)' class='btn btn-info'>Show PickupPoints</td>
+
+    
+  {{weekendPickupPoints}}
+
+  <div class='form-group form-inline'>
+    <label> dinner order - qty</label>
+
+    <input type='number' name='qty' [(ngModel)]='qty' class ='form-control' min='1' max = '10' placeholder="Quantity ">
+    <span> {{qty}} dinner will be server on board</span> 
+
+  </div>

@@ -1,6 +1,10 @@
+
 0.
 run the travel.json  with 
 PS C:\Shashi\AngularJs\DAY2\AMorningAngular> json-server .\travel.json
+
+
+
 
 1. make Interface weekendtrip.ts  
   //
@@ -12,11 +16,16 @@ PS C:\Shashi\AngularJs\DAY2\AMorningAngular> json-server .\travel.json
 
 3. app.module.ts
 import {HttpClient, HttpClientModule} from '@angular/common/http';
+
+@NgModule
+
 add
  imports: [ HttpClientModule]
  providers: [HttpClient]
 
 4. showtrips.service.ts
+@Injectable
+
  import { HttpClient } from '../../node_modules/@angular/common/http';
 
 
@@ -24,6 +33,11 @@ then write code for
 findWeekEnd
 findOneDay
 
+
+holidays.component.ts
+@Component
+
+in ngOnInit()  write 
 
 5. holidays.component.html read data 
 
