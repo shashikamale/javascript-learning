@@ -1,0 +1,27 @@
+PS C:\Shashi\AngularJs\DAY3\MyAppShashiDay3\src\app> ng g c list
+list component created
+
+list  components 
+    list\list.component.ts
+        import Input
+        @Input() listItems:string[];
+
+    list\list.component.html
+        use ngFor , populate the list 
+        <li *ngFor='let eachItem of listItems' class="list-group-item">{{eachItem}}</li>
+
+footer components 
+    (footer.component.ts)
+    some data in footer component 
+        social: string[];
+        and constructor this.social = ['instagram', 'Facebook', 'Twitter' , 'whatsapp'];
+
+    footer\footer.component.html
+        here we are sending the data to child 
+        
+        <app-list [listItems]='partners'></app-list>
+        <app-list [listItems]='social'></app-list>
+
+
+start server
+      ng serve -o
