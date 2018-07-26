@@ -12,6 +12,9 @@ import { AsiaTourComponent } from './asia-tour/asia-tour.component';
 import { IndiaTourComponent } from './india-tour/india-tour.component';
 import { HighLightDirective } from './high-light.directive';
 import { ResizeDirective } from './resize.directive';
+import { FilterPipe } from './filter.pipe';
+import { AgentManagerComponent } from './agent-manager/agent-manager.component';
+import { AgentReviewComponent } from './agent-review/agent-review.component';
 
 
 @NgModule({
@@ -25,7 +28,10 @@ import { ResizeDirective } from './resize.directive';
     AsiaTourComponent,
     IndiaTourComponent,
     HighLightDirective,
-    ResizeDirective
+    ResizeDirective,
+    FilterPipe,
+    AgentManagerComponent,
+    AgentReviewComponent
   ],
   imports: [
     BrowserModule,
@@ -34,6 +40,7 @@ import { ResizeDirective } from './resize.directive';
     ReactiveFormsModule
   ],
   providers: [HttpClient],
+  entryComponents: [AgentReviewComponent],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -1,0 +1,32 @@
+Update travel.json with agent
+json-server .\travel.json
+
+Create new 
+PS C:\Shashi\AngularJs\DAY4\MyAppShashiDay4A> ng g i agent
+    CREATE src/app/agent.ts (27 bytes)
+PS C:\Shashi\AngularJs\DAY4\MyAppShashiDay4A> ng g s agentApi
+    CREATE src/app/agent-api.service.spec.ts (387 bytes)
+    CREATE src/app/agent-api.service.ts (137 bytes)
+PS C:\Shashi\AngularJs\DAY4\MyAppShashiDay4A> ng g s agentManager
+    CREATE src/app/agent-manager.service.spec.ts (411 bytes)
+    CREATE src/app/agent-manager.service.ts (141 bytes)
+PS C:\Shashi\AngularJs\DAY4\MyAppShashiDay4A> ng g p filter
+    CREATE src/app/filter.pipe.spec.ts (187 bytes)
+    CREATE src/app/filter.pipe.ts (201 bytes)
+    UPDATE src/app/app.module.ts (1364 bytes)
+PS C:\Shashi\AngularJs\DAY4\MyAppShashiDay4A> ng g c agentManager
+CREATE src/app/agent-manager/agent-manager.component.html (32 bytes)
+CREATE src/app/agent-manager/agent-manager.component.spec.ts (671 bytes)
+CREATE src/app/agent-manager/agent-manager.component.ts (296 bytes)
+CREATE src/app/agent-manager/agent-manager.component.css (0 bytes)
+UPDATE src/app/app.module.ts (1472 bytes)
+
+(NEW /Updated files )
+src/app/agent.ts
+src/app/agent-api.service.ts
+src/app/agent-manager.service.ts
+src/app/filter.pipe.ts
+src/app/app.module.ts
+src/app/agent-manager/agent-manager.component.html
+src/app/agent-manager/agent-manager.component.ts
+

@@ -1,0 +1,36 @@
+<h2 class="text-center">Agent Details</h2>
+<p>Agent-manager works!</p>
+
+<div class='form-inline'>
+  <label>Search by Name </label>
+  <input type="text" [(ngModel)]="queryString" class="glyphicon-search">
+</div>
+<h3 class="text-center">Agent Details Filtered</h3>
+<table class="table table-striped">
+    <tr>
+      <th>Agent Name</th>
+      <th>Location</th>
+      <th>contact</th>
+    </tr>
+    <tr *ngFor="let eachAgent of agentList | filter : 'name' : queryString">
+      <td>{{eachAgent.name}}</td>
+      <td>{{eachAgent.location}}</td>
+      <td>{{eachAgent.contact}}</td>
+    </tr>
+  </table>
+<!--
+<h3 class="text-center">Agent Details All</h3>
+<table class="table table-striped">
+  <tr>
+    <th>Agent Name</th>
+    <th>Location</th>
+    <th>contact</th>
+  </tr>
+  <tr *ngFor="let eachAgent of agentList">
+    
+    <td>{{eachAgent.name}}</td>
+    <td>{{eachAgent.location}}</td>
+    <td>{{eachAgent.contact}}</td>
+  </tr>
+</table>
+-->
