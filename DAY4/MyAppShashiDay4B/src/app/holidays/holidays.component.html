@@ -1,0 +1,56 @@
+<table class="table table-striped">
+  <tr *ngFor='let eachTrip of weekEndTripList'>
+    <td>{{eachTrip.source}}</td>
+    <td>{{eachTrip.destination}}</td>
+    <td>{{eachTrip.fare}}</td>
+    <td button (click)='show(eachTrip.destination)' class='btn btn-info'>Show PickupPoints</td>
+
+
+  </tr>
+</table>
+{{weekendPickupPoints}}
+<hr>
+<table class="table table-striped">
+  <tr *ngFor='let eachTrip of oneDayEndTripList'>
+    <td>{{eachTrip.source}}</td>
+    <td>{{eachTrip.destination}}</td>
+    <td>{{eachTrip.fare}}</td>
+    <td button (click)='show(eachTrip.destination)' class='btn btn-info'>Show PickupPoints</td>
+  </tr>
+
+</table>
+<hr>
+
+<div class='form-group form-inline'>
+  <label> dinner order - qty</label>
+
+  <input type='number' name='qty' [(ngModel)]='qty' class='form-control' min='1' max='10' placeholder="Quantity ">
+  <app-process-order [reqQty]='qty' (replyEvent)="onChange($event)"></app-process-order>
+  <!--
+      V1
+      <span[ngStyle]="{'margin-left':15px'} "> {{qty}} dinner will be server on board</span> 
+      v2 below
+    -->
+  <span [ngStyle]="{'margin-left' : '15px'} ">{{msg}}</span>
+
+</div>
+<hr>
+<div >
+  <app-india-tour></app-india-tour>
+  <app-asia-tour></app-asia-tour>
+</div>
+<div  >
+    <table class="table table-striped">
+  <tr *ngFor='let indiaTour of indiaTours'>
+    <td>{{indiaTour.tourName}}</td>
+    <td>{{indiaTour.description}}</td>
+    <td>{{indiaTour.price | currency: 'EUR':'symbol'}}</td>
+    <td>
+      <img [src]='indiaTour.image' width="100" alt="IndiaTour-image" appResize>
+    </td>
+  </tr>
+</table>
+  
+
+</div>
+<hr>

@@ -1,0 +1,21 @@
+
+
+PS C:\Shashi\AngularJs\DAY3\MyAppShashiDay3> ng g c asiaTour
+CREATE src/app/asia-tour/asia-tour.component.html (28 bytes)
+CREATE src/app/asia-tour/asia-tour.component.spec.ts (643 bytes)
+CREATE src/app/asia-tour/asia-tour.component.ts (280 bytes)
+CREATE src/app/asia-tour/asia-tour.component.css (0 bytes)
+UPDATE src/app/app.module.ts (1047 bytes)
+PS C:\Shashi\AngularJs\DAY3\MyAppShashiDay3> ng g c indiaTour
+CREATE src/app/india-tour/india-tour.component.html (29 bytes)
+CREATE src/app/india-tour/india-tour.component.spec.ts (650 bytes)
+CREATE src/app/india-tour/india-tour.component.ts (284 bytes)
+CREATE src/app/india-tour/india-tour.component.css (0 bytes)
+UPDATE src/app/app.module.ts (1143 bytes)
+PS C:\Shashi\AngularJs\DAY3\MyAppShashiDay3> ng g c tour
+CREATE src/app/tour/tour.component.html (23 bytes)
+CREATE src/app/tour/tour.component.spec.ts (614 bytes)
+CREATE src/app/tour/tour.component.ts (261 bytes)
+CREATE src/app/tour/tour.component.css (0 bytes)
+UPDATE src/app/app.module.ts (1217 bytes)
+PS C:\Shashi\AngularJs\DAY3\MyAppShashiDay3>

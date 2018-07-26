@@ -1,0 +1,20 @@
+
+<hr>
+<h5 align="center">footer</h5>
+<hr>
+<div class= "container" > 
+  <div class='row'>
+    <div class='col-md-6'>
+      <h4>partners</h4>
+      <app-list [listItems]='partners'></app-list>
+    </div>
+
+    <div class='col-md-6'>
+        <h4>social</h4>
+        <!-- applist is   child comopnent selector: 'app-list',-->
+        <!-- listItems is coming from childcomponent @Input what we have defined ,-->
+        <!-- social is the data we are sending from parent to child,-->
+        <app-list [listItems]='social'></app-list>
+      </div>
+  
+  </div>
