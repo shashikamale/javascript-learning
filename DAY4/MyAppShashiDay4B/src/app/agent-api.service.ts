@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 
 import { Agent } from './agent';
 import { Observable } from '../../node_modules/rxjs';
-import { HttpClient } from '../../node_modules/@angular/common/http';
+import { HttpClient, HttpResponse, HttpHeaders} from '../../node_modules/@angular/common/http';
 
 @Injectable({
   providedIn: 'root'
@@ -21,8 +21,11 @@ export class AgentApiService {
     return this.http.get<Agent[]>(this.baseURL + `/${Id}`);
   }
 
-  addAgent(singleAgent: Agent) {
-    return null;
+  addAgent(singleAgent: Agent): Observable<HttpResponse<{}>> {
+    const headers = new HttpHeaders().set('Content-Type', 'application/json');
+    return this.http.post<HttpResponse<{}>>(this.baseURL, singleAgent, {headers});
   }
+
+
 
 }

@@ -1,17 +1,74 @@
 {
-    "weekendTrips":[
-        {"id": 1,"src": "Hyderabad", "destination": "vijayawada","fare":4000},
-        {"id": 2,"src": "Hyderabad", "destination": "srisailam","fare":2000},
-        {"id": 3,"src": "Secunderabad", "destination": "bangalore","fare":6000}
-    ],
-    "onedayTrips" : [
-        {"id": 1,"src": "Hyderabad", "destination": ["ramojiFilmCity", "SalarjungMuseum"],"fare":2500},
-        {"id": 2,"src": "Hyderabad", "destination": ["Lumbini garden", "Birla Mandir"],"fare":100}
-    ],
-    "agents" : [
-        {"id": 101,"name": "John", "location": "Chennai","contact":1234567890 },
-        {"id": 102,"name": "Ramesh", "location": "Delhi","contact":4455667788 },
-        {"id": 103,"name": "Rajesh", "location": "Hyderabad","contact":1122334455 },
-        {"id": 104,"name": "Rahul", "location": "Mumbai","contact": 6677554433 }
-    ]
+  "weekendTrips": [
+    {
+      "id": 1,
+      "src": "Hyderabad",
+      "destination": "vijayawada",
+      "fare": 4000
+    },
+    {
+      "id": 2,
+      "src": "Hyderabad",
+      "destination": "srisailam",
+      "fare": 2000
+    },
+    {
+      "id": 3,
+      "src": "Secunderabad",
+      "destination": "bangalore",
+      "fare": 6000
+    }
+  ],
+  "onedayTrips": [
+    {
+      "id": 1,
+      "src": "Hyderabad",
+      "destination": [
+        "ramojiFilmCity",
+        "SalarjungMuseum"
+      ],
+      "fare": 2500
+    },
+    {
+      "id": 2,
+      "src": "Hyderabad",
+      "destination": [
+        "Lumbini garden",
+        "Birla Mandir"
+      ],
+      "fare": 100
+    }
+  ],
+  "agents": [
+    {
+      "id": 101,
+      "name": "John",
+      "location": "Chennai",
+      "contact": 1234567890
+    },
+    {
+      "id": 102,
+      "name": "Ramesh",
+      "location": "Delhi",
+      "contact": 4455667788
+    },
+    {
+      "id": 103,
+      "name": "Rajesh",
+      "location": "Hyderabad",
+      "contact": 1122334455
+    },
+    {
+      "id": 104,
+      "name": "Rahul",
+      "location": "Mumbai",
+      "contact": 6677554433
+    },
+    {
+      "id": "22211",
+      "name": "4534gfhgfhfg",
+      "location": "HHYYDD",
+      "contact": "7687687"
+    }
+  ]
 }

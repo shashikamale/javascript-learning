@@ -1,26 +1,26 @@
 <h2 class="text-center">Agent Details</h2>
 <p>Agent-manager works!</p>
 <div>
-<form frm="ngForm" (ngSubmit)="submit (frm.value)">
+<form #frm="ngForm" (ngSubmit)="submit(frm.value)">
   <div class="form-group">
     <label for="id">Agent id</label>
-    <input type="text" name="id" ng-model requiredclass="form-control">
+    <input type="text" name="id" ngModel required class="form-control">
   </div>
   <div class="form-group">
     <label for="name">Agent name</label>
-    <input type="text" name="name" ng-model requiredclass="form-control">
+    <input type="text" name="name" ngModel required class="form-control">
   </div>
   <div class="form-group">
     <label for="location">Agent location</label>
-    <input type="text" name="location" ng-model requiredclass="form-control">
+    <input type="text" name="location" ngModel required class="form-control">
   </div>
   <div class="form-group">
     <label for="contact">Agent contact</label>
-    <input type="text" name="contact" ng-model requiredclass="form-control">
+    <input type="text" name="contact" ngModel required class="form-control">
   </div>
   
-    <button type="submit" value="Add" [disabled]="frm.invalid"  >add</button>
-
+   <input type="submit" value="Add" [disabled]='frm.invalid' class="btn btn-danger">
+  
 </form>
 </div>
 <h2 class="text-center">Agent Details All</h2>

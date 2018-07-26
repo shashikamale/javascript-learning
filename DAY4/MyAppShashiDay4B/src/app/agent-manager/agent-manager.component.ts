@@ -26,7 +26,7 @@ export class AgentManagerComponent implements OnInit {
 
     submit(frmData) {
       this.singleAgent = frmData;
-      console.log('Agent ' + this.singleAgent);
+      console.log('Agent ' + this.singleAgent.id + this.singleAgent.name + this.singleAgent.location + this.singleAgent.contact);
       this.service.addAgent(this.singleAgent).subscribe( resp => console.log(resp));
 
     }
